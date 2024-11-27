@@ -1,0 +1,399 @@
+/* โลโก้ */
+.logo-img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+/* เมนู */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* ลักษณะพื้นหลังที่นุ่มนวล */
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาใต้เมนู */
+}
+
+/* ลิงก์ในเมนู */
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px; /* เพิ่มขนาดฟอนต์ */
+    padding: 8px 16px; /* เพิ่มพื้นที่ในปุ่ม */
+    border-radius: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+    background-color: #007bff; /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+/* สำหรับธีมปกติ */
+.navbar h1 {
+    color: #333;
+    font-size: 20px; /* ปรับขนาดฟอนต์ */
+}
+
+
+/* สำหรับธีมปกติ */
+.navbar h1 {
+    color: #333; /* สีข้อความในธีมสว่าง */
+}
+
+/* ป้องกันเนื้อหาถูกบังโดยเมนู */
+body {
+    margin-top: 150px; /* เพิ่มระยะห่างใต้เมนู */
+    font-family: 'Arial', sans-serif; /* ฟอนต์หลักของเนื้อหา */
+    background-color: #fff; /* สีพื้นหลังของเนื้อหา */
+    color: #000;
+    background: linear-gradient(135deg, #f2f2f2 0%, #e6e6e6 100%); /* กราเดียนต์นุ่มนวล */
+}
+/* สำหรับธีมมืด */
+body.dark-theme .navbar h1 {
+    color: #fff; /* สีข้อความในธีมมืด */
+}
+
+
+
+.stickers-container {
+    display: flex;
+    flex-wrap: wrap;        /* Allow images to wrap to the next line */
+    justify-content: flex-start; /* Align images to the left */
+    margin-top: 20px;
+    gap: 15px;             /* Add space between the images */
+    padding-left: 20px;
+}
+
+/* Styling for the images */
+.stickers-container img {
+    width: calc(25% - 15px); /* Make each image take up 25% of the container width minus the gap */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+
+/* สไตล์สำหรับส่วนของหัวข้อ */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0; /* เพิ่มระยะห่างบน-ล่าง */
+}
+
+h4 {
+    color: #333;          /* ทำให้ข้อความเป็นสีเข้ม */
+    font-size: 1.5rem;    /* กำหนดขนาดข้อความ */
+    text-align: center;   /* จัดข้อความให้กึ่งกลาง */
+    margin-top: 20px;     /* เพิ่มระยะห่างจากข้อความอื่น */
+}
+h3 {
+    color: #333;          /* ทำให้ข้อความเป็นสีเข้ม */
+    font-size: 1.5rem;    /* กำหนดขนาดข้อความ */
+    text-align: center;   /* จัดข้อความให้กึ่งกลาง */
+    margin-top: 20px;     /* เพิ่มระยะห่างจากข้อความอื่น */
+}
+
+/* สไตล์สำหรับรูปสติกเกอร์ */
+.stikker, .stikker1 {
+    display: block;
+    margin: 20px auto; /* จัดกึ่งกลาง */
+    max-width: 100%; /* ปรับขนาดให้พอดีกับหน้าจอ */
+    height: auto; /* ปรับความสูงตามสัดส่วน */
+}
+
+/* ปรับการจัดวาง TikTok Embed ให้อยู่ทางขวา */
+.tiktok-video {
+    text-align: center; /* จัดให้อยู่กลาง */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+}
+
+/* ปรับขนาด iframe ของ TikTok */
+iframe {
+    max-width: 100%; /* ให้เต็มความกว้าง */
+    height: auto;
+    border: none; /* ลบกรอบ */
+    display: block; /* ให้ iframe เป็นบล็อก */
+    margin-left: auto; /* จัดให้ iframe อยู่ทางขวา */
+    margin-right: auto; /* จัดให้ iframe อยู่ตรงกลาง */
+}
+
+.buy-now-btn-container {
+    text-align: center; /* จัดปุ่มให้ตรงกลาง */
+    margin-top: 20px;
+}
+
+/* สไตล์สำหรับปุ่มซื้อ */
+.buy-now-btn {
+    display: inline-block;
+    margin: 20px auto;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* ระยะห่างด้านบน */
+    width: auto; /* ให้ปุ่มปรับขนาดตามเนื้อหา */
+    max-width: 200px; /* จำกัดความกว้างสูงสุด */
+}
+
+.buy-now-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* หน้า login */
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.login-container h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.login-container p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-container a {
+    color: #007bff;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.login-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.image-link {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    transition: transform 0.3s;
+}
+.image-link:hover {
+    transform: scale(1.1); /* ขยายเล็กน้อยเมื่อโฮเวอร์ */
+}
+
+/* ธีมมืด */
+body.dark-theme {
+    background-color: #000; /* สีพื้นหลังเข้ม */
+    color: #fff; /* สีข้อความ */
+}
+
+/* ปุ่มธีมมืด */
+.dark-theme .navbar {
+    background-color: #333; /* สีเมนูในธีมมืด */
+    color: #fff;
+}
+
+.dark-theme a {
+    color: #bbb; /* ลิงก์ในธีมมืด */
+}
+
+.dark-theme a:hover {
+    color: #fff; /* ลิงก์เมื่อโฮเวอร์ */
+}
+
+.dark-theme .buy-now-btn {
+    background-color: #555; /* ปุ่ม Buy Now ในธีมมืด */
+    color: white;
+}
+
+.dark-theme .buy-now-btn:hover {
+    background-color: #777; /* ปุ่มเมื่อโฮเวอร์ในธีมมืด */
+}
+
+.toggle-theme-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-theme-btn:hover {
+    background-color: #0056b3;
+}
+
+/* สไตล์สำหรับปุ่มสลับธีม */
+#theme-toggle-btn {
+    position: fixed; /* ตำแหน่งคงที่ */
+    bottom: 20px; /* ระยะจากขอบล่าง */
+    right: 20px; /* ระยะจากขอบขวา */
+    background-color: #007bff; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    border: none; /* ไม่มีเส้นขอบ */
+    padding: 10px 20px; /* ระยะห่างภายใน */
+    border-radius: 5px; /* มุมโค้ง */
+    cursor: pointer; /* เปลี่ยนเป็นรูปมือเมื่อชี้ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+    z-index: 1000; /* ให้อยู่เหนือองค์ประกอบอื่น */
+    transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนสี */
+}
+
+#theme-toggle-btn:hover {
+    background-color: #0056b3; /* สีเมื่อชี้เมาส์ */
+}
+
+/* ธีมมืด */
+body.dark-theme #theme-toggle-btn {
+    background-color: #555;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* เรียงเมนูเป็นแนวตั้ง */
+        align-items: flex-start;
+    }
+    .stickers-container img {
+        width: calc(50% - 10px); /* ให้รูปใหญ่ขึ้นในหน้าจอเล็ก */
+    }
+}
+@media (max-width: 480px) {
+    .stickers-container img {
+        width: 100%; /* ให้รูปเต็มหน้าจอ */
+    }
+    .buy-now-btn {
+        width: 100%; /* ขยายปุ่มให้เต็มหน้าจอ */
+        text-align: center;
+    }
+}
+.features-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #4caf8e;
+    margin-bottom: 20px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .icon-placeholder {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+  }
+  
+  .communications-icon {
+    background-image: url('communications-icon.png'); /* Replace with actual image URL */
+    background-size: cover;
+  }
+  
+  .inspired-icon {
+    background-image: url('inspired-icon.png'); /* Replace with actual image URL */
+    background-size: cover;
+  }
+  
+  .happy-icon {
+    background-image: url('happy-icon.png'); /* Replace with actual image URL */
+    background-size: cover;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .more-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4caf8e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .more-button:hover {
+    background-color: #43a07e;
+  }

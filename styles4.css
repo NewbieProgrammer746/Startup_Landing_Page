@@ -1,0 +1,267 @@
+/* โลโก้ */
+.logo-img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+/* เมนู */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* ลักษณะพื้นหลังที่นุ่มนวล */
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาใต้เมนู */
+}
+
+/* ลิงก์ในเมนู */
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px; /* เพิ่มขนาดฟอนต์ */
+    padding: 8px 16px; /* เพิ่มพื้นที่ในปุ่ม */
+    border-radius: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+    background-color: #007bff; /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+/* สำหรับธีมปกติ */
+.navbar h1 {
+    color: #333;
+    font-size: 20px; /* ปรับขนาดฟอนต์ */
+}
+
+/* หน้า login */
+.login-container {
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับกล่อง */
+}
+
+.login-container h2 {
+    text-align: center;
+    font-size: 26px; /* ขนาดตัวอักษรที่ใหญ่ขึ้น */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* สไตล์ฟอร์ม */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.login-form input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* มุมโค้ง */
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #007bff; /* เปลี่ยนสีกรอบเมื่อโฟกัส */
+    outline: none;
+}
+
+.login-form button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* สีเมื่อชี้เมาส์ */
+}
+
+.login-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.login-container a {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* ธีมมืด */
+body.dark-theme {
+    background-color: #121212; /* สีพื้นหลังเข้ม */
+    color: #fff;
+}
+
+/* ปุ่มธีมมืด */
+.dark-theme .navbar {
+    background-color: #333;
+}
+
+.dark-theme a {
+    color: #bbb;
+}
+
+.dark-theme a:hover {
+    color: #fff;
+}
+
+.dark-theme .buy-now-btn {
+    background-color: #555;
+}
+
+.dark-theme .buy-now-btn:hover {
+    background-color: #777;
+}
+
+/* ปุ่มสลับธีม */
+#theme-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#theme-toggle-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* เพิ่มขนาดเมื่อโฮเวอร์ */
+}
+
+/* เพิ่มพื้นหลังกราเดียนต์ */
+body {
+    background: linear-gradient(135deg, #f2f2f2 0%, #e6e6e6 100%); /* กราเดียนต์นุ่มนวล */
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* เรียงเมนูเป็นแนวตั้ง */
+        align-items: flex-start;
+    }
+    .stickers-container img {
+        width: calc(50% - 10px); /* ให้รูปใหญ่ขึ้นในหน้าจอเล็ก */
+    }
+}
+@media (max-width: 480px) {
+    .stickers-container img {
+        width: 100%; /* ให้รูปเต็มหน้าจอ */
+    }
+    .buy-now-btn {
+        width: 100%; /* ขยายปุ่มให้เต็มหน้าจอ */
+        text-align: center;
+    }
+}
+.features-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #4caf8e;
+    margin-bottom: 20px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .icon-placeholder {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+  }
+  
+  .communications-icon {
+    background-image: url('communications-icon.png'); /* Replace with actual image URL */
+    background-size: cover;
+  }
+  
+  .inspired-icon {
+    background-image: url('inspired-icon.png'); /* Replace with actual image URL */
+    background-size: cover;
+  }
+  
+  .happy-icon {
+    background-image: url('happy-icon.png'); /* Replace with actual image URL */
+    background-size: cover;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .more-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4caf8e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .more-button:hover {
+    background-color: #43a07e;
+  }
